@@ -10,8 +10,14 @@ import { AlunoService } from './aluno.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+<<<<<<< HEAD
    aluno: Aluno = {nome: "", cpf: "", email: "", github: ""};
    alunoService = new AlunoService();
+=======
+   constructor(private alunoService: AlunoService) {}
+
+   aluno: Aluno = {nome: "", cpf: "", email: ""};
+>>>>>>> b948fbc... serviço de aluno injetado, não criado pelo componente
    alunos: Aluno[] = [];
    cpfduplicado: boolean = false;
 
