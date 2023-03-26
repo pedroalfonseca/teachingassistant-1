@@ -1,5 +1,6 @@
 export class Aluno {
-  nome: string;
-  cpf: string;
-  email: string;
+  nome: string | undefined;
+  cpf: string | undefined;
+  email: string | undefined;
+  github: string | undefined;
 }
