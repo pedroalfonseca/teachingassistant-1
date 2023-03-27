@@ -11,7 +11,7 @@ export class AlunoService {
     }
     return result;
   }
-  cpfNaoCadastrado(cpf: string): boolean {
+  cpfNaoCadastrado(cpf: string | undefined): boolean {
      return !this.alunos.find(a => a.cpf == cpf);
   }
 }
