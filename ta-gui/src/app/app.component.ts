@@ -12,22 +12,14 @@ import { AlunoService } from './aluno.service';
 export class AppComponent {
    constructor(private alunoService: AlunoService) {}
 
-<<<<<<< HEAD
-   aluno: Aluno = {nome: "", cpf: "", email: "", github: ""};
-=======
    aluno: Aluno = new Aluno();
->>>>>>> b9d0e2f... cadastro de metas, e clonagem de objetos para simular funcionamento do servidor
    alunos: Aluno[] = [];
    cpfduplicado: boolean = false;
 
    criarAluno(a: Aluno): void {
      if (this.alunoService.criar(a)) {
        this.alunos.push(a);
-<<<<<<< HEAD
-       this.aluno = {nome: "", cpf: "", email: "", github: ""};
-=======
        this.aluno = new Aluno();
->>>>>>> b9d0e2f... cadastro de metas, e clonagem de objetos para simular funcionamento do servidor
      } else {
        this.cpfduplicado = true;
      }
